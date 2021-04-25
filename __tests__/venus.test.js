@@ -4,12 +4,12 @@ describe ('Venus', () => {
 
   test('it should instantiate a venus object with a year value', () => {
     const newVenus = new Venus();
-    expect(newVenus.year).toEqual(0.62);
+    expect(newVenus.venusYear).toEqual(0.62);
   });
 
   test('it should return my age in venus years', () => {
-    const newVenus = new Venus();
+    const newVenus = new Venus(25);
     newVenus.ageCalc();
-    expect(venusAge).toEqual(40);
+    expect(newVenus.venusAge).toEqual(40);
   });
 });
