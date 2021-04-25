@@ -10,7 +10,7 @@ describe('Jupiter', () => {
   test('it should return my age in jupiter years', () => {
     const newJupiter = new Jupiter(25);
     newJupiter.ageCalc();
-    expect(newJupiter.jupiterAge).toEqual(104);
+    expect(newJupiter.jupiterAge).toEqual(2);
   });
-  
+
 });
