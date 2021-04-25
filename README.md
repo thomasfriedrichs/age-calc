@@ -1,34 +1,32 @@
-# _Application Name_
+# _Planet Age Calculator_
 
-#### _Brief description of application_
+#### _calculates age, life expectancy, and years past life expectancy based on planet_
 
 #### By _**Thomas Friedrichs**_
 
 ## Technologies Used
 
 * _Vscode_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _Javascript_
+* _npm_
+* _jest_
 
 ## Description
 
-_This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have._
+_Each file is made up of a class based on planet. Each class has properties specific to the planet along with methods that calculate age, life expectancy, and years past life expectancy._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Vscode_
+* _go to https://github.com/thomasfriedrichs/age-calc_
+* _select code, and copy the url to your clipboard_
+* _open your terminal, select a folder and do git clone (paste), then type code ._
+* _at this point you have business logic in your code editor, you can apply this to a UI in a million different ways, its all up you! just remember you are working with class constructors._
 
-_Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _no knows bugs_
 
 ## License
 
