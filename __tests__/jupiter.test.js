@@ -13,4 +13,11 @@ describe('Jupiter', () => {
     expect(newJupiter.jupiterAge).toEqual(2);
   });
 
+  test('it should return how many years i have left on jupiter', () => {
+    const newJupiter = new Jupiter(25,80);
+    newJupiter.ageCalc();
+    newJupiter.yearsLeftCalculator();
+    expect(newJupiter.yearsLeft).toEqual(78);
+  });
+
 });
