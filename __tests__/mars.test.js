@@ -12,5 +12,12 @@ describe('Mars', () => {
     newMars.ageCalc();
     expect(newMars.marsAge).toEqual(13);
   });
+
+  test('it should return how many years i have left on mars', () => {
+    const newMars = new Mars(25,80);
+    newMars.ageCalc();
+    newMars.yearsLeftCalculator();
+    expect(newMars.yearsLeft).toEqual(67);
+  });
 });
 
