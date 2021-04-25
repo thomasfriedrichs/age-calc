@@ -1,5 +1,5 @@
 export default class Jupiter {
   constructor() {
-    this.year = 11.86;
+    this.jupiterYear = 11.86;
   }
 }
