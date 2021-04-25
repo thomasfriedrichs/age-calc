@@ -20,4 +20,10 @@ describe('Jupiter', () => {
     expect(newJupiter.yearsLeft).toEqual(78);
   });
 
+  test('it should return how many years you are past your life expectancy', () => {
+    const newJupiter = new Jupiter(25,80);
+    newJupiter.ageCalc();
+    newJupiter.yearsPastCalculator();
+    expect(newJupiter.yearsPast).toEqual(-78);
+  });
 });

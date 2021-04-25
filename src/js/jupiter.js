@@ -5,6 +5,7 @@ export default class Jupiter {
     this.jupiterAge = 0;
     this.lifeExpectancy = lifeExpectancy;
     this.yearsLeft;
+    this.yearsPast;
   }
 
   ageCalc() {
@@ -13,5 +14,9 @@ export default class Jupiter {
 
   yearsLeftCalculator() {
     return this.yearsLeft = (this.lifeExpectancy - this.jupiterAge);
+  }
+
+  yearsPastCalculator() {
+    return this.yearsPast = (this.jupiterAge - this.lifeExpectancy);
   }
 }
