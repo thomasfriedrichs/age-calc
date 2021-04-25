@@ -28,7 +28,7 @@ describe('Mercury', () => {
   test('it should return how many years you are past your life expectancy', () => {
     const newMercury = new Mercury(25,80);
     newMercury.ageCalc();
-    newMercury.yearsLeftCalculator();
+    newMercury.yearsPastCalculator();
     expect(newMercury.yearsPast).toEqual(24);
   });
 });

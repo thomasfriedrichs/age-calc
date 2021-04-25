@@ -5,6 +5,7 @@ export default class Mercury {
     this.mercuryAge = 0;
     this.lifeExpectancy = lifeExpectancy;
     this.yearsLeft;
+    this.yearsPast;
   }
 
   ageCalc() {
@@ -13,5 +14,9 @@ export default class Mercury {
   
   yearsLeftCalculator() {
     return this.yearsLeft = (this.lifeExpectancy - this.mercuryAge);
+  }
+
+  yearsPastCalculator() {
+    return this.yearsPast = (this.mercuryAge - this.lifeExpectancy);
   }
 }
