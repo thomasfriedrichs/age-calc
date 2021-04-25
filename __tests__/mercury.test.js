@@ -11,4 +11,9 @@ describe('Mercury', () => {
     const newMercury = new Mercury();
     expect(newMercury.year).toEqual(0.24);
   });
+
+  test('it should return my age in mercury years', () => {
+    const newMercury = new Mercury(25);
+    expect(newMercury.myAge).toEqual(6);
+  });
 });
