@@ -5,6 +5,7 @@ export default class Venus {
     this.venusAge = 0;
     this.yearsLeft;
     this.lifeExpectancy = lifeExpectancy;
+    this.yearsPast
   }
 
   ageCalc() {
@@ -13,5 +14,9 @@ export default class Venus {
 
   yearsLeftCalculator() {
     return this.yearsLeft = (this.lifeExpectancy - this.venusAge);
+  }
+
+  yearsPastCalculator() {
+    return this.yearsPast = (this.venusAge - this.lifeExpectancy);
   }
 }

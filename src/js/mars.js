@@ -1,5 +1,5 @@
 export default class Mars {
   constructor() {
-    this.year = 1.88;
+    this.marsYear = 1.88;
   }
 }
