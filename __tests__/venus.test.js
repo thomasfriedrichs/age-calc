@@ -19,4 +19,11 @@ describe ('Venus', () => {
     newVenus.yearsLeftCalculator();
     expect(newVenus.yearsLeft).toEqual(40);
   });
+
+  test('it should return how many years i am past my life expectancy', () => {
+    const newVenus = new Venus(25, 80);
+    newVenus.ageCalc();
+    newVenus.yearsPastCalculator();
+    expect(newVenus.yearsPast).toEqual(-40);
+  });
 });
