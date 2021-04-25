@@ -5,6 +5,7 @@ export default class Mars {
     this.marsAge = 0;
     this.yearsLeft;
     this.lifeExpectancy = lifeExpectancy;
+    this.yearsPast;
   }
 
   ageCalc() {
@@ -13,5 +14,9 @@ export default class Mars {
 
   yearsLeftCalculator() {
     return this.yearsLeft = (this.lifeExpectancy - this.marsAge);
+  }
+
+  yearsPastCalculator() {
+    return this.yearsPast = (this.marsAge - this.lifeExpectancy);
   }
 }

@@ -21,10 +21,10 @@ describe('Mars', () => {
   });
 
   test('it should return how many years you are past your life expectancy', () => {
-    const newMercury = new Mercury(25,80);
-    newMercury.ageCalc();
-    newMercury.yearsPastCalculator();
-    expect(newMercury.yearsPast).toEqual(24);
-  });
+    const newMars = new Mars(25,80);
+    newMars.ageCalc();
+    newMars.yearsPastCalculator();
+    expect(newMars.yearsPast).toEqual(-67);
+  }); 
 });
 
