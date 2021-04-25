@@ -12,4 +12,11 @@ describe ('Venus', () => {
     newVenus.ageCalc();
     expect(newVenus.venusAge).toEqual(40);
   });
+
+  test('it should return how many years i have left on venus', () => {
+    const newVenus = new Venus(25, 80);
+    newVenus.ageCalc();
+    newVenus.yearsLeftCalculator();
+    expect(newVenus.yearsLeft).toEqual(40);
+  });
 });
