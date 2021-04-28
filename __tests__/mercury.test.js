@@ -31,4 +31,18 @@ describe('Mercury', () => {
     newMercury.yearsPastCalculator();
     expect(newMercury.yearsPast).toEqual(24);
   });
+
+  test('it should return how many years you have left on jupiter', () => {
+    const newJupiter = new Jupiter(25,80);
+    newJupiter.ageCalc();
+    newJupiter.timeLeft();
+    expect(newJupiter.timeLeft()).toEqual(78);
+    });
+
+    test('it should return how many years you are past life expectancy on jupiter', () => {
+      const newJupiter = new Jupiter(25,1);
+      newJupiter.ageCalc();
+      newJupiter.timeLeft();
+      expect(newJupiter.timeLeft()).toEqual(1);
+      });
 });
