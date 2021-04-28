@@ -12,11 +12,11 @@ export default class Jupiter {
     return this.jupiterAge += Math.floor((this.myAge / this.jupiterYear));
   }
 
-  yearsLeftCalculator() {
-    return this.yearsLeft = (this.lifeExpectancy - this.jupiterAge);
-  }
-
-  yearsPastCalculator() {
-    return this.yearsPast = (this.jupiterAge - this.lifeExpectancy);
+  timeLeft() {
+    if ((this.jupiterAge - this.lifeExpectancy) > 0) {
+      return (this.jupiterAge - this.lifeExpectancy); 
+    } else {
+      return (this.lifeExpectancy - this.jupiterAge);
+    }
   }
 }

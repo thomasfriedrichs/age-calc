@@ -13,17 +13,18 @@ describe('Jupiter', () => {
     expect(newJupiter.jupiterAge).toEqual(2);
   });
 
-  test('it should return how many years i have left on jupiter', () => {
-    const newJupiter = new Jupiter(25,80);
-    newJupiter.ageCalc();
-    newJupiter.yearsLeftCalculator();
-    expect(newJupiter.yearsLeft).toEqual(78);
-  });
 
-  test('it should return how many years you are past your life expectancy', () => {
+    test('it should return how many years you have left on jupiter', () => {
     const newJupiter = new Jupiter(25,80);
     newJupiter.ageCalc();
-    newJupiter.yearsPastCalculator();
-    expect(newJupiter.yearsPast).toEqual(-78);
-  });
+    newJupiter.timeLeft();
+    expect(newJupiter.timeLeft()).toEqual(78);
+    });
+
+    test('it should return how many years you are past life expectancy on jupiter', () => {
+      const newJupiter = new Jupiter(25,1);
+      newJupiter.ageCalc();
+      newJupiter.timeLeft();
+      expect(newJupiter.timeLeft()).toEqual(1);
+      });
 });
