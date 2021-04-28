@@ -13,32 +13,19 @@ describe('Mars', () => {
     expect(newMars.marsAge).toEqual(13);
   });
 
-  test('it should return how many years i have left on mars', () => {
-    const newMars = new Mars(25,80);
-    newMars.ageCalc();
-    newMars.yearsLeftCalculator();
-    expect(newMars.yearsLeft).toEqual(67);
-  });
-
-  test('it should return how many years you are past your life expectancy', () => {
-    const newMars = new Mars(25,80);
-    newMars.ageCalc();
-    newMars.yearsPastCalculator();
-    expect(newMars.yearsPast).toEqual(-67);
-  }); 
 
   test('it should return how many years you have left on mars', () => {
     const newMars = new Mars(25,80);
     newMars.ageCalc();
     newMars.timeLeft();
-    expect(newMars.timeLeft()).toEqual(78);
+    expect(newMars.timeLeft()).toEqual(67);
     });
 
     test('it should return how many years you are past life expectancy on mars', () => {
       const newMars = new Mars(25,1);
       newMars.ageCalc();
       newMars.timeLeft();
-      expect(newMars.timeLeft()).toEqual(1);
+      expect(newMars.timeLeft()).toEqual(12);
       });
 });
 

@@ -12,11 +12,11 @@ export default class Mars {
     return this.marsAge += Math.floor((this.myAge / this.marsYear));
   }
 
-  yearsLeftCalculator() {
-    return this.yearsLeft = (this.lifeExpectancy - this.marsAge);
-  }
-
-  yearsPastCalculator() {
-    return this.yearsPast = (this.marsAge - this.lifeExpectancy);
+  timeLeft() {
+    if ((this.marsAge - this.lifeExpectancy) > 0) {
+      return (this.marsAge - this.lifeExpectancy); 
+    } else {
+      return (this.lifeExpectancy - this.marsAge);
+    }
   }
 }
